@@ -1,0 +1,21 @@
+pipeline{
+agent any{
+stages{
+stage('check'){
+steps{
+git 'https://github.com/PNP-RIT/my_first_pro'
+}
+}
+stage('Build'){
+steps{
+sh 'echo "building the app"'
+}
+}
+stage('Test'){
+steps{
+sh 'echo "building the app"'
+}
+}
+}
+}
+}
