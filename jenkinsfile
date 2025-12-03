@@ -7,7 +7,7 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/PNP-RIT/my_first_pro'
             }
         }
-            Stage('compile') {
+            stage('compile') {
                 steps {
                     echo "Compiling..."
                        }
